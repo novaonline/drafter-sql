@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{7a58c649-d77e-4d7b-88ce-66d3ec9d8f5b}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -97,9 +97,9 @@
     <Build Include="dbo\Stored Procedures\usp_user_show_permissions_insert.sql" />
     <Build Include="dbo\Stored Procedures\usp_users_insert.sql" />
     <Build Include="dbo\Stored Procedures\usp_users_update.sql" />
+    <PostDeploy Include="seeding\types.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="seeding\dbo.transaction_types.data.sql" />
-    <None Include="seeding\dbo.user_permission_types.data.sql" />
+    <None Include="DrafterDatabase.publish.xml" />
   </ItemGroup>
 </Project>
