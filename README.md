@@ -20,6 +20,6 @@ Query away!
 
 ## Seeding
 
-It's nice to have some data to work with. Create some post deployment scripts in the `seeding` folder.
+Sometimes it makes sense to add data right after a database creation. Create some post deployment scripts in the `seeding` folder.
 
 post deployment scripts can be created by adding a Post-Deployment Script item in the seeding folder (`Add > New Item... > SQLServer > User Scripts > Post-Deployment Script`)
