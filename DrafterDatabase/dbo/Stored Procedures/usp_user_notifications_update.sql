@@ -13,5 +13,6 @@ CREATE PROCEDURE [dbo].[usp_user_notifications_update]
 	@add_dt datetime = null
 AS
 	UPDATE[dbo].[user_notifications] 
-	SET [read_dt] = @read_dt
+	SET [read_dt] = @read_dt --better be UTC Time!
+	WHERE id = id
 RETURN 0
