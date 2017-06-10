@@ -15,3 +15,13 @@ GO
 CREATE NONCLUSTERED INDEX [IX_character_transactions_character_id]
     ON [dbo].[character_transactions]([show_round_id] ASC, [character_id] ASC);
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'an event that has happened to a character',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'character_transactions',
+    @level2type = NULL,
+    @level2name = NULL

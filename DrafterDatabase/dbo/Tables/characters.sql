@@ -21,3 +21,13 @@ GO
 CREATE NONCLUSTERED INDEX [IX_characters_show_id]
     ON [dbo].[characters]([show_id] ASC, [add_dt] DESC);
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'a representation of a person that is part of a show',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'characters',
+    @level2type = NULL,
+    @level2name = NULL

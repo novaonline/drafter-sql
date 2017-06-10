@@ -8,3 +8,13 @@
     CONSTRAINT [PK_users] PRIMARY KEY CLUSTERED ([id] ASC)
 );
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'This is the user''s profile. The ID and how user login comes from a different project',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'users',
+    @level2type = NULL,
+    @level2name = NULL

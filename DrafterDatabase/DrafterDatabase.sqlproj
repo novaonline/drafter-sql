@@ -93,8 +93,6 @@
     <Build Include="dbo\Stored Procedures\usp_user_notifications_delete.sql" />
     <Build Include="dbo\Stored Procedures\usp_user_notifications_insert.sql" />
     <Build Include="dbo\Stored Procedures\usp_user_notifications_update.sql" />
-    <Build Include="dbo\Stored Procedures\usp_user_permissions_delete.sql" />
-    <Build Include="dbo\Stored Procedures\usp_user_permissions_insert.sql" />
     <Build Include="dbo\Stored Procedures\usp_user_show_permissions_delete.sql" />
     <Build Include="dbo\Stored Procedures\usp_user_show_permissions_insert.sql" />
     <Build Include="dbo\Stored Procedures\usp_users_insert.sql" />

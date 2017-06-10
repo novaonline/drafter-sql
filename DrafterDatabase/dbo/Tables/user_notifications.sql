@@ -13,3 +13,13 @@ GO
 CREATE NONCLUSTERED INDEX [IX_user_notifications_user_id]
     ON [dbo].[user_notifications]([user_id] ASC);
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'notifications for each user',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'user_notifications',
+    @level2type = NULL,
+    @level2name = NULL

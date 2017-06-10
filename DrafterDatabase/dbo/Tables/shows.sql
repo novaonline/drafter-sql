@@ -16,3 +16,13 @@ GO
 CREATE NONCLUSTERED INDEX [IX_shows_add_dt]
     ON [dbo].[shows]([add_dt] DESC);
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'a container for all characters in the show',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'shows',
+    @level2type = NULL,
+    @level2name = NULL
