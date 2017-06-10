@@ -57,5 +57,51 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="seeding" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\character_transactions.sql" />
+    <Build Include="dbo\Tables\characters.sql" />
+    <Build Include="dbo\Tables\show_rounds.sql" />
+    <Build Include="dbo\Tables\shows.sql" />
+    <Build Include="dbo\Tables\transaction_types.sql" />
+    <Build Include="dbo\Tables\user_character_assignments.sql" />
+    <Build Include="dbo\Tables\user_character_permissions.sql" />
+    <Build Include="dbo\Tables\user_notifications.sql" />
+    <Build Include="dbo\Tables\user_permission_types.sql" />
+    <Build Include="dbo\Tables\user_show_permissions.sql" />
+    <Build Include="dbo\Tables\users.sql" />
+    <Build Include="dbo\Stored Procedures\usp_character_transactions_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_character_transactions_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_characters_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_characters_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_characters_update.sql" />
+    <Build Include="dbo\Stored Procedures\usp_show_rounds_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_show_rounds_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_shows_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_shows_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_shows_update.sql" />
+    <Build Include="dbo\Stored Procedures\usp_transaction_types_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_transaction_types_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_transaction_types_update.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_character_assignments_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_character_permissions_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_character_permissions_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_notifications_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_notifications_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_notifications_update.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_permissions_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_permissions_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_show_permissions_delete.sql" />
+    <Build Include="dbo\Stored Procedures\usp_user_show_permissions_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_users_insert.sql" />
+    <Build Include="dbo\Stored Procedures\usp_users_update.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="seeding\dbo.transaction_types.data.sql" />
+    <None Include="seeding\dbo.user_permission_types.data.sql" />
   </ItemGroup>
 </Project>
