@@ -67,7 +67,6 @@
     <Build Include="dbo\Tables\characters.sql" />
     <Build Include="dbo\Tables\show_rounds.sql" />
     <Build Include="dbo\Tables\shows.sql" />
-    <Build Include="dbo\Tables\transaction_types.sql" />
     <Build Include="dbo\Tables\user_character_assignments.sql" />
     <Build Include="dbo\Tables\user_character_permissions.sql" />
     <Build Include="dbo\Tables\user_notifications.sql" />
