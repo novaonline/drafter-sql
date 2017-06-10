@@ -23,3 +23,13 @@ GO
 CREATE NONCLUSTERED INDEX [IX_user_character_assignments_user_id]
     ON [dbo].[user_character_assignments]([user_id] ASC);
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'the characters that a user ''subscribes'' to',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'user_character_assignments',
+    @level2type = NULL,
+    @level2name = NULL

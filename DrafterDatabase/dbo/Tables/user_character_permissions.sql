@@ -13,3 +13,13 @@ GO
 CREATE UNIQUE NONCLUSTERED INDEX [IX_user_character_permissions_user_id]
     ON [dbo].[user_character_permissions]([user_id] ASC);
 
+
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N'character permissions for a moderator (moderators are users with permissions)',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'user_character_permissions',
+    @level2type = NULL,
+    @level2name = NULL
