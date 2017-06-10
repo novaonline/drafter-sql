@@ -6,8 +6,7 @@
     [add_dt]              DATETIME DEFAULT (getutcdate()) NOT NULL,
     PRIMARY KEY CLUSTERED ([id] ASC),
     CONSTRAINT [FK_character_transactions_characters] FOREIGN KEY ([character_id]) REFERENCES [dbo].[characters] ([id]),
-    CONSTRAINT [FK_character_transactions_show_rounds] FOREIGN KEY ([show_round_id]) REFERENCES [dbo].[show_rounds] ([id]),
-    CONSTRAINT [FK_character_transactions_transaction_types] FOREIGN KEY ([transaction_type_id]) REFERENCES [dbo].[transaction_types] ([id])
+    CONSTRAINT [FK_character_transactions_show_rounds] FOREIGN KEY ([show_round_id]) REFERENCES [dbo].[show_rounds] ([id])
 );
 
 
